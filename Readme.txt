@@ -26,6 +26,8 @@ Papu
         4.4.1 Router
         4.4.2 Express
         4.4.3 Cors
+        4.4.4 Nodemode
+        4.4.5 FS - do testowania bazy danych
 
 5. Projekt bazy danych
 
@@ -41,4 +43,9 @@ Papu
         { ingName: "Name", quantity: "200g" }
         { ingName: "Name", quantity: "200g" }
     ]
-        
+
+6. API
+
+    Root node do zastosowania stricte informacyjnego
+    Wykaz dostępnych endpointów 
+    Opis funkcjonalności (To na przyszłość bo na pewno zapomnisz jak co działa)
