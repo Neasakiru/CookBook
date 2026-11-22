@@ -1,0 +1,27 @@
+.form-page { padding: 32px 0 60px; }
+
+.form-page-header { margin-bottom: 28px; }
+
+.back-link-page {
+  display: inline-block; color: var(--warm-gray); text-decoration: none;
+  font-size: 0.88rem; font-weight: 500; margin-bottom: 12px;
+  transition: color 0.2s;
+}
+.back-link-page:hover { color: var(--terracotta); }
+
+.form-page-title {
+  font-family: var(--font-display);
+  font-size: 2rem; font-weight: 700; color: var(--charcoal);
+  letter-spacing: -0.02em;
+}
+
+.form-page-subtitle {
+  color: var(--warm-gray); margin-top: 4px; font-size: 0.95rem;
+}
+
+.form-card { padding: 32px 36px; }
+
+@media (max-width: 640px) {
+  .form-card { padding: 20px 18px; }
+  .form-page-title { font-size: 1.5rem; }
+}
