@@ -31,10 +31,16 @@ app.use(errorHandler);
 
 // MongoDB connection
 mongoose
-  .connect(process.env.MONGODB_URI || "mongodb://localhost:27017/recipe-app")
+  .connect(
+    process.env.MONGODB_URI ||
+      "mongodb://host.docker.internal:27017/recipe-app",
+  )
   .then(() => {
     console.log("✅ Połączono z MongoDB");
-    app.listen(PORT, () => console.log(`🚀 Serwer działa na porcie ${PORT}`));
+
+    app.listen(PORT, "0.0.0.0", () => {
+      console.log(`🚀 Serwer działa na porcie ${PORT}`);
+    });
   })
   .catch((err) => {
     console.error("❌ Błąd połączenia z MongoDB:", err.message);
